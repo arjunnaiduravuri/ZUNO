@@ -14,6 +14,7 @@ body {
     color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid red;
 }
 
 h1,
@@ -227,8 +228,6 @@ a:hover{
 }
 .fa-xmark{
     color:#110404;
-    margin-top: 10px;
-    margin-left: -350px;
 }
 .linkss a{
     padding: 10px 25px;
@@ -248,14 +247,53 @@ a:hover{
     display: none;
 }
 
-.container h1 {
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+.container img{
+    width: 100%;
+    opacity: 0.8;
+}
+
+.cyber{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+
+.cyber h1{
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 500;
+    
+    color: #1a8bb8;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+@keyframes fadeInDown{
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(2);
+    }
+}
+
+/* .container h1 {
     text-align: center;
     width: 500px;
     margin: auto 450px;
     margin-top: 200px;
     font-size: 2.8rem;
     margin-bottom: 40px;
-}
+} */
 
 .container1 img {
     border-radius: 50px;
@@ -278,10 +316,10 @@ a:hover{
     background-color: rgba(0, 0, 128, 0.788);
     padding: 20px;
     width: 85%;
-    margin: 100px auto;
+    margin: 50px auto;
     gap: 50px;
     border-radius: 40px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .container1 h1 {
@@ -778,7 +816,7 @@ a:hover{
 
 .container16 {
     width: 700px;
-    height: 220px;
+    height: auto;
     background-color: cadetblue;
     text-align: center;
     margin-top: 60px;

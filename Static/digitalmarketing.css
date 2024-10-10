@@ -227,8 +227,6 @@ a:hover{
 }
 .fa-xmark{
     color:#110404;
-    margin-top: 10px;
-    margin-left: -350px;
 }
 .linkss a{
     padding: 10px 25px;
@@ -519,6 +517,30 @@ a:hover{
     color: white;
     text-decoration: underline;
 }
+@media (max-width:968px) {
+    .con4 h1{
+        font-size: 2rem;
+    }
+    .con5 img{
+        width: 280px;
+    }
+    .container5{
+        gap:20px;
+    }
+    .conn3 h1,.conn3 h2{
+        font-size:1.5rem;
+    }
+    .conn3{
+        height:500px;
+    }
+    .con7 img{
+        width:300px;
+        height: 300px;
+    }
+    .con7 p{
+        font-size: 1rem;
+    }
+}
 @media (max-width:768px) {
     .side{
         display: block;
@@ -532,7 +554,27 @@ a:hover{
     }
     .footer{
         height: 800px;
-        
+
+    }
+    .container3{
+        flex-direction: column;
+    }
+    .conn3{
+        height:300px;
+    }
+    .container4{
+        flex-direction: column;
+    }
+    .con4 img{
+        margin-top: 30px;
+    }
+    .container5{
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin-left: 240px;
+    }
+    .container6{
+        flex-direction: column;
     }
 }
 @media (max-width:468px) {
@@ -543,9 +585,30 @@ a:hover{
     }
     .footer{
         height: 1300px;
-        
+
     }
     .icon{
         margin-left: 150px;
+    }
+    .container5{
+        margin-left: 80px;
+    }
+    .container2{
+        width:80%;
+    }
+    .con7 p{
+        width:400px;
+    }
+    .con4 p{
+        width:300px;
+        font-size: 1rem;
+        margin: 40px auto;
+
+    }
+    .con4 h1{
+        width:300px;
+        font-size: 1.6rem;
+        margin: 40px auto;
+
     }
 }
