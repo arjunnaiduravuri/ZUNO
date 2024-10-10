@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?s=1024x1024&w=is&k=20&c=ho97hTtpbzO2oM5e8EDdGf8a6ZLRZr94gWxBAnRMzLk=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    border: 0px solid pink;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    background-image: linear-gradient(to right, rgb(199, 156, 216), rgb(97 75 159), rgb(173 78 159));
+}
+
+.logo {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-shadow: #3b738d 3px 3px;
+    text-shadow: 2px 2px 6px #2ec4ff;
+}
+
+.logo img {
+    margin-top: 10px;
+}
+
+.logo:hover {
+    color: #2399c7;
+    text-shadow: 6px 4px white;
+}
+
+.menu {
+    margin-right: 30px;
+    display: flex;
+    gap: 30px;
+    color: #ffffff;
+    /* color: rgb(66, 22, 119); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu p {
+    font-size: 17px;
+}
+
+.home {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding:8px 4px;
+}
+
+a{
+    text-decoration: none;
+    /* color: rgb(66, 22, 119); */
+    color:#ffffff;
+}
+a:hover{
+    color:#1ba6dd;
+}
+
+.ser {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding:8px 4px;
+    /* color:#1ba6dd; */
+    position: relative;
+
+}
+
+.servo{
+    width:200px;
+    height:300px;
+    display: none;
+    position:absolute;
+    top:40px;
+    left:-30px;
+    background-color: #ffffff;
+}
+
+.ser:hover .servo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    color:#1ba6dd
+}
+.servo a{
+    text-decoration: none;
+    color:black;
+    padding:8px 4px;
+}
+
+
+.care {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding:8px 4px;
+}
+
+.us {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding:8px 4px;
+
+}
+
+.cont {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding:8px 4px;
+}
+
+.home:hover {
+    border: 1px solid #1ba6dd;
+    border-radius: 10px;
+    color: #1ba6dd;
+    background-color: white;
+    text-decoration: none;
+    transition: 1s;
+    transform: 0.8;
+}
+
+
+.ser:hover {
+    border: 1px solid #1ba6dd;
+    border-radius: 10px;
+    color: #1ba6dd;
+    background-color: white;
+    transition: 1s;
+    transform: 0.8;
+    text-decoration: none;
+
+}
+
+.care:hover {
+    border: 1px solid #1ba6dd;
+    border-radius: 10px;
+    color: #1ba6dd;
+    background-color: white;
+    text-decoration: none;
+    transition: 1s;
+    transform: 0.8;
+
+}
+
+.us:hover {
+    border: 1px solid #1ba6dd;
+    border-radius: 10px;
+    color: #1ba6dd;
+    background-color: white;
+    text-decoration: none;
+    transition: 1s;
+    transform: 0.8;
+
+}
+
+.cont:hover {
+    border: 1px solid #1ba6dd;
+    border-radius: 10px;
+    color: #1ba6dd;
+    background-color: white;
+    text-decoration: none;
+    transition: 1s;
+    transform: 0.8;
+}
+.side-icon{
+    width:40px;
+    height:40px;
+    padding:12px;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    align-items:center;
+  
+}
+.bur{
+    width:30px;
+    height:3px;
+    background-color: #110404;
+}
+.side{
+    position: relative;
+    z-index: 9999;
+}
+.slideNav{
+    position: fixed;
+    width: 400px;
+    top: 0px;
+    right: -100%;
+    transition: right 1s;
+    background-color: white;
+
+}
+.fa-xmark{
+    color:#110404;
+}
+.linkss a{
+    padding: 10px 25px;
+    border-bottom: 1px solid gray;
+    display:flex;
+    text-decoration: none;
+    margin:20px auto;
+    color:#110404;
+}
+#mm{
+    display: none;
+}
+#mm:checked ~ .slideNav{
+    right: 0;
+}
+.side{
+    display: none;
+}
+.side input{
+    display:none;
+}
+
+.contact {
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    margin: 70px 150px;
+    background-image: url("https://accessnsite.com/wp-content/uploads/2020/05/page-heading-background-contact-us.jpg");
+
+}
+
+.head {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    border: 0px solid white;
+    width: 50%;
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 30px;
+    color: white
+}
+
+.add {
+    border: 0px solid white;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.add h6 {
+    font-size: 30px;
+
+}
+
+.add h4 {
+    font-size: 22px;
+    font-style: normal;
+    font-family: initial;
+    font-weight: bold;
+}
+
+.add h4:hover {
+    text-decoration: underline;
+}
+
+.add p {
+    font-size: 14px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mail {
+    border: 1px solid white;
+    width: 40%;
+    height: 300px;
+    margin-top: 50px;
+    background-color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.send {
+    font-size: 20px;
+    color: rgb(6, 28, 61);
+
+}
+
+.send input {
+    border: 2px solid white;
+    width: 350px;
+    height: 20px;
+    border-bottom-color: black;
+}
+
+.send1 {
+    font-size: 20px;
+    color: rgb(6, 28, 61);
+    padding-top: 20px;
+}
+
+.send1 input {
+    border: 2px solid white;
+    width: 350px;
+    height: 20px;
+    border-bottom-color: black;
+}
+
+.send2 {
+    font-size: 20px;
+    color: rgb(6, 28, 61);
+    padding-top: 20px;
+}
+
+.send2 input {
+    border: 2px solid white;
+    width: 350px;
+    height: 20px;
+    border-bottom-color: black;
+}
+
+.btn button {
+    border: 1px solid rgb(26, 42, 83);
+    width: 250px;
+    height: 40px;
+    margin: 40px 40px;
+    background-color: rgb(26, 42, 83);
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.btn button:hover {
+    border: 1px solid rgb(26, 42, 83);
+    background-color: white;
+    color: rgb(26, 42, 83);
+}
+.footer {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    color: white;
+    background-color: rgb(173 78 159);
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+}
+
+.foot {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 90px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: #3ddbff 3px 3px;
+    text-shadow: 2px 2px 6px rgb(145, 171, 245);
+}
+
+.foot:hover {
+    color: #8be8ff;
+}
+
+.line {
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.line p {
+    padding-top: 20px;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.icon1:hover {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    color: #1f2036;
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+
+}
+
+.icon2:hover {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    color: #1f2036;
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.icon3:hover {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    color: #1f2036;
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.icon4:hover {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    color: #1f2036;
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.icon5:hover {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    color: #1f2036;
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.icon6:hover {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    color: #1f2036;
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.line h2:hover {
+    color: rgba(255, 255, 255, 0.514);
+    text-decoration: underline;
+}
+
+.fa-circle {
+    font-size: 5px;
+}
+
+.end {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.end p {
+    padding-top: 7px;
+}
+
+.end p:hover {
+    color: white;
+    text-decoration: underline;
+}
+@media (max-width:1024px) {
+    .send input,.send1 input,.send2 input{
+        width:250px;
+    }
+    .btn button{
+        width:250px;
+        margin-left:0px;
+    }
+    .contact{
+        margin-left: 100px;
+    }
+}
+@media (max-width:968px) {
+    .send input,.send1 input,.send2 input{
+        width:250px;
+    }
+    .btn button{
+        width:250px;
+        margin-left:0px;
+    }
+}
+
+@media (max-width:768px) {
+    .side{
+        display: block;
+    }
+    .menu{
+        display:none;
+    }
+    .line{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer{
+        height: 800px;
+        
+    }
+    .info{
+        flex-direction: column;
+    }
+    .contact{
+        height:800px;
+        margin-left: 80px;
+    }
+    .mail{
+        width:70%;
+    }
+}
+@media (max-width:468px) {
+    .line{
+        display:grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer{
+        height: 1300px;
+        
+    }
+.icon{
+        margin-left: 150px;
+    }
+    .details{
+        margin-left: -40px;
+    }
+    .add{
+        gap:20px;
+    }
+    .contact{
+        margin-left: 50px;
+    }
+    .send input,.send1 input,.send2 input{
+        width:200px;
+    }
+    .btn button{
+        width:150px;
+        margin-left:20px;
+    }
+}
